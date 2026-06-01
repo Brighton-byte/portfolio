@@ -1,0 +1,214 @@
+digraph AI_ML_Skills_Flowchart {
+
+    rankdir=TB;
+    node [shape=rectangle, style=rounded, fontname="Helvetica"];
+    graph [fontname="Helvetica"];
+
+    Start [label="Tekirya Brighton AI & ML Engineer Skill Stack", shape=oval, style=filled, fillcolor=lightgrey];
+
+    /* ================= CORE AI & ML ================= */
+    subgraph cluster_ai_ml {
+        label="Artificial Intelligence & Machine Learning";
+        style=rounded;
+
+        AI [label="Artificial Intelligence"];
+        ML [label="Machine Learning"];
+        DL [label="Deep Learning"];
+        CV [label="Computer Vision"];
+        NLP [label="Natural Language Processing"];
+        FE [label="Feature Engineering"];
+        MTE [label="Model Training & Evaluation"];
+        TL [label="Transfer Learning"];
+        MO [label="Model Optimization"];
+        DEP [label="AI Model Deployment"];
+    }
+
+    /* ================= DATA SCIENCE ================= */
+    subgraph cluster_data {
+        label="Data Science & Analytics";
+        style=rounded;
+
+        DA [label="Data Analysis"];
+        DC [label="Data Cleaning"];
+        DP [label="Data Preprocessing"];
+        EDA [label="Exploratory Data Analysis"];
+        SA [label="Statistical Analysis"];
+        PM [label="Predictive Modeling"];
+        TS [label="Time Series Analysis"];
+        DV [label="Data Visualization"];
+    }
+
+    /* ================= PROGRAMMING ================= */
+    subgraph cluster_prog {
+        label="Programming & Development";
+        style=rounded;
+
+        Python [label="Python"];
+        JS [label="JavaScript"];
+        SQL [label="SQL"];
+        Bash [label="Bash / Shell Scripting"];
+    }
+
+    /* ================= FRAMEWORKS ================= */
+    subgraph cluster_frameworks {
+        label="Frameworks & Libraries";
+        style=rounded;
+
+        TF [label="TensorFlow"];
+        PT [label="PyTorch"];
+        Keras [label="Keras"];
+        SK [label="Scikit-learn"];
+        OpenCV [label="OpenCV"];
+        NumPy [label="NumPy"];
+        Pandas [label="Pandas"];
+        MPL [label="Matplotlib"];
+        Flask [label="Flask"];
+        FastAPI [label="FastAPI"];
+    }
+
+    /* ================= WEB & BACKEND ================= */
+    subgraph cluster_web {
+        label="Web, Backend & APIs";
+        style=rounded;
+
+        REST [label="RESTful API Development"];
+        Backend [label="Backend Development"];
+        FullStack [label="Full-Stack Development"];
+        HTML [label="HTML5"];
+        CSS [label="CSS3"];
+        JSON [label="JSON"];
+        Auth [label="Authentication & Authorization"];
+        APIInt [label="API Integration"];
+    }
+
+    /* ================= IOT & EMBEDDED ================= */
+    subgraph cluster_iot {
+        label="IoT, Embedded & Hardware";
+        style=rounded;
+
+        IoT [label="Internet of Things (IoT)"];
+        Arduino [label="Arduino"];
+        RPi [label="Raspberry Pi"];
+        Sensors [label="Sensor Integration"];
+        EdgeAI [label="Edge AI"];
+        PCB [label="PCB Design (Basic)"];
+        Comm [label="I2C / SPI / UART"];
+    }
+
+    /* ================= DATABASES ================= */
+    subgraph cluster_db {
+        label="Databases & Data Storage";
+        style=rounded;
+
+        MySQL [label="MySQL"];
+        SQLite [label="SQLite"];
+        Postgres [label="PostgreSQL"];
+        DBDesign [label="Database Design"];
+        Pipelines [label="Data Pipelines"];
+        CRUD [label="CRUD Operations"];
+    }
+
+    /* ================= DEVOPS ================= */
+    subgraph cluster_devops {
+        label="DevOps, Tools & Engineering Hygiene";
+        style=rounded;
+
+        Git [label="Git"];
+        GitHub [label="GitHub"];
+        Linux [label="Linux"];
+        Docker [label="Docker (Basic)"];
+        CI [label="CI/CD Concepts"];
+        Debug [label="Debugging & Testing"];
+        Logs [label="Application Logging"];
+    }
+
+    /* ================= CLOUD ================= */
+    subgraph cluster_cloud {
+        label="Cloud & Deployment";
+        style=rounded;
+
+        Cloud [label="Cloud Computing Fundamentals"];
+        Hosting [label="API Hosting"];
+        EdgeDeploy [label="Local & Edge Deployment"];
+    }
+
+    /* ================= SECURITY ================= */
+    subgraph cluster_security {
+        label="Cybersecurity & AI Security";
+        style=rounded;
+
+        InfoSec [label="Information Security"];
+        Vuln [label="Vulnerability Analysis"];
+        SecureDev [label="Secure Application Development"];
+        Privacy [label="Data Privacy"];
+        Ethics [label="AI Ethics"];
+        Threat [label="Threat Modeling"];
+    }
+
+    /* ================= DOMAINS ================= */
+    subgraph cluster_domains {
+        label="AI Specialization Domains";
+        style=rounded;
+
+        MedAI [label="Medical AI Systems"];
+        AgriAI [label="Agricultural AI"];
+        Robotics [label="Robotics & Humanoid Systems"];
+        SmartHome [label="Smart Home Automation"];
+        Diagnostic [label="Diagnostic AI"];
+        OfflineAI [label="Offline AI Systems"];
+    }
+
+    /* ================= RESEARCH ================= */
+    subgraph cluster_research {
+        label="Research, Innovation & Strategy";
+        style=rounded;
+
+        Research [label="AI Research"];
+        Arch [label="System Architecture Design"];
+        PoC [label="Proof of Concept Development"];
+        Docs [label="Technical Documentation"];
+        Scale [label="Scalability Planning"];
+        Product [label="Product Thinking"];
+    }
+
+    /* ================= SOFT SKILLS ================= */
+    subgraph cluster_soft {
+        label="Professional & Soft Skills";
+        style=rounded;
+
+        Problem [label="Problem Solving"];
+        Critical [label="Critical Thinking"];
+        CommSkill [label="Technical Communication"];
+        Adapt [label="Adaptability"];
+        Lead [label="Technical Leadership"];
+        Time [label="Time Management"];
+    }
+
+    /* ================= BONUS ================= */
+    subgraph cluster_bonus {
+        label="Bonus Power Skills";
+        style=rounded;
+
+        RAG [label="Retrieval-Augmented Generation (RAG)"];
+        Transformers [label="Transformer Models"];
+        Prompt [label="Prompt Engineering"];
+        XAI [label="Explainable AI (XAI)"];
+        OSS [label="Open Source Collaboration"];
+    }
+
+    /* ================= FLOW ================= */
+    Start -> AI;
+    AI -> DA;
+    DA -> Python;
+    Python -> TF;
+    TF -> REST;
+    REST -> IoT;
+    IoT -> DBDesign;
+    DBDesign -> Git;
+    Git -> Cloud;
+    Cloud -> InfoSec;
+    InfoSec -> MedAI;
+    MedAI -> Research;
+    Research -> Problem;
+    Problem -> RAG;
+}
