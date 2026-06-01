@@ -31,7 +31,7 @@ I am an AI and Machine Learning Engineer passionate about building intelligent s
 
 Visit the live portfolio website:
 
-[Add your website URL here]
+[https://Brighton-byte.github.io/portfolio]
 
 ## Projects
 
