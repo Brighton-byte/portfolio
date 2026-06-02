@@ -32,6 +32,11 @@ I am an AI and Machine Learning Engineer passionate about building intelligent s
 Visit the live portfolio website:
 
 [https://Brighton-byte.github.io/portfolio]
+<img width="1879" height="905" alt="image" src="https://github.com/user-attachments/assets/8fed5d2c-0080-45fd-a8bc-c7e6c2975017" />
+<img width="1884" height="911" alt="image" src="https://github.com/user-attachments/assets/0a067ea1-0adc-47ff-8f62-6c19fd57828d" />
+<img width="1858" height="895" alt="image" src="https://github.com/user-attachments/assets/0f95253e-598e-48fb-b7ba-e44176648b7e" />
+
+<img width="1879" height="9020" alt="Screenshot_2-6-2026_5715_brighton-byte github io" src="https://github.com/user-attachments/assets/3e527a31-b9ec-46ac-89ce-a82bffa0cb52" />
 
 ## Projects
 
